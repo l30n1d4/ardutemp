@@ -29,7 +29,7 @@ To run this project, you will need to add the following variables to your arduin
 ## Documentation
 
 functions to display value in led matrix (value in format xx.x)
-```
+```cpp
 void clear_frame() {
   for (int row = 0; row < 8; row++) {
     for (int col = 0; col < 12; col++) {
@@ -53,7 +53,7 @@ void add_to_frame(int index, int pos) {
 ```
 
 function to get datetime in format YYYY-MM-DDTHH:MM:SS with zeros filled
-```
+```cpp
 String getDateTime() {
   char datetime[19];
   RTCTime currentTime;
@@ -71,7 +71,7 @@ String getDateTime() {
 ```
 
 code to get tens, units and decimal to display in led matrix
-```
+```cpp
 if (lastTemp != temp) {
     lastTemp = temp;
     int th, tz, te;
